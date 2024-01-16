@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "*.scss": "tailwindcss"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "terminal.integrated.fontFamily": "monospace",
+  "editor.fontFamily": "'JetBrains Mono Thin'",
+  "editor.fontLigatures": true,
+}

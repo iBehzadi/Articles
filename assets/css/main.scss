@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "yekan";
+  src: url("/fonts/IRANYekanXVF.woff") format("woff");
+}
+@font-face {
+  font-family: "vazir";
+  src: url("/fonts/vazir/Vazir-Medium-FD-WOL.ttf") format("truetype"),
+    url("/fonts/vazir/Vazir-Medium-FD-WOL.woff") format("woff"),
+    url("/fonts/vazir/Vazir-Medium-FD-WOL.woff2") format("woff2");
+}
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --clr-primary-1: #5a189a;
+  --clr-primary-2: #7b2cbf;
+  --clr-primary-3: #9d4edd;
+  --clr-grey-1: #102a42;
+  --clr-grey-2: #617d98;
+  --clr-grey-3: #9eb2c7;
+  --clr-grey-4: #f1f5f8;
+  --clr-white: #fff;
+  --clr-footer: #10002b;
+  --ff-second: "yekan", sans-serif;
+  --ff-primary: "vazir", monospace;
+  --transition: all 0.3s linear;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-2);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+div img {
+  @apply w-full block;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .btn {
+    @apply rounded-md border-solid border-2 p-2 outline-offset-2 border-blue-500 transition-all hover:bg-blue-500 hover:text-white;
+  }
+  .btn-second {
+    @apply rounded-md border-solid border-2 p-2 outline-offset-2 border-blue-500 transition-all  hover:border-blue-300;
+  }
+  .section-center {
+    @apply w-[85vw] mx-auto max-w-[1170px] text-center;
+  }
+  section {
+    @apply py-20;
+  }
+  input {
+    @apply border border-black/40 mt-1 p-1  focus:outline-1 focus:outline-blue-500;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-2);
+}
+
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+li.fav {
+  @apply bg-green-400;
+}
