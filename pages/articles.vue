@@ -15,6 +15,12 @@
 </template>
 
 <script lang="ts" setup>
+useHead({
+  title: 'Nuxt | Our Articles',
+  meta: [
+    { name: 'description', content: 'list of our articles' }
+  ]
+})
 
  </script>
 

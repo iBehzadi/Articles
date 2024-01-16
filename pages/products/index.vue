@@ -15,15 +15,20 @@ declare global {
     price: number,
     description: string,
     category: string,
-    images: string,
+    image: string,
     rating: {
       count: number,
       rate: number
     }
   }
 }
-const { data: products } = await useFetch<IProduct[]>('https://api.escuelajs.co/api/v1/products');
-
+const { data: products } = await useFetch<IProduct[]>('https://fakestoreapi.com/products/');
+useHead({
+  title: 'Nuxt | Products',
+  meta: [
+    { name: 'description', content: 'list of our products' }
+  ]
+})
 
 </script>
 

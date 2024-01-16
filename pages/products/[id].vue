@@ -1,5 +1,13 @@
 <template>
   <section>
+    <div>
+
+      <head>
+        <Title>Nuxt | {{ product?.title }}</Title>
+        <Meta name="description" :content="product?.description">
+        </Meta>
+      </head>
+    </div>
     <div v-if="product" class="section-center ">
       <div>
         <h1 class="text-4xl">Product Details </h1>
@@ -12,7 +20,7 @@
 
 <script lang="ts" setup>
 const { id } = useRoute().params;
-const url = 'https://api.escuelajs.co/api/v1/products/' + id;
+const url = 'https://fakestoreapi.com/products/' + id;
 
 const { data: product } = await useFetch<IProduct>(url);
 

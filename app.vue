@@ -1,10 +1,5 @@
 <script setup lang="ts">
-useHead({
-  title: 'iBehzadi | Articles',
-  meta: [
-    { name: 'description', content: 'My first web site made with nuxt3' }
-  ]
-})
+
 </script>
 
 <template>

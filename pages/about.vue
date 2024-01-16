@@ -5,7 +5,7 @@
     </div>
     <section>
       <div class="section-center ">
-
+        <pre dir="ltr" v-if="data">{{ data }}</pre>
       </div>
     </section>
   </div>
@@ -14,8 +14,22 @@
 <script lang="ts" setup>
 definePageMeta({
   layout: 'custom',
-  middleware : "auth"
+  middleware: "auth"
 })
+
+useHead({
+  title: 'Nuxt | About us',
+  meta: [
+    { name: 'description', content: 'about of ibehzadi dev' }
+  ]
+})
+const { data } = await useFetch('/api/weather/mashhad');
+// const { data } = useFetch('/api/sample?name=behzad', {
+//   method: 'post',
+//   body: { age: 26 }
+// })
+
+// const { data } = useFetch('/api/sample')
 </script>
 
 <style></style>

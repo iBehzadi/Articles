@@ -13,7 +13,6 @@ export default {
       boxShadow : {
         'light' : '0 5px 15px rgba(0, 0, 0, 0.1)',
         'dark' : '0 5px 15px rgba(0, 0, 0, 0.2)',
-
       }
     },
     screens: {

@@ -30,13 +30,6 @@ sayHello()
 </script>
 
 <style>
-/* @media screen and (min-width: 768px) {
-  .article-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0 2rem;
 
-  }
-} */
+
 </style>
