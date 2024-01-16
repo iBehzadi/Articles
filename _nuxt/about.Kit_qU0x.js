@@ -1,1 +1,0 @@
-import{d as t,o as s,c as o,a as e}from"./entry.nwRfqwwf.js";const c=e("div",{class:"text-center"},[e("h1",{class:"p-2 bg-green-400"},"درباره من")],-1),n=e("section",null,[e("div",{class:"section-center"})],-1),a=[c,n],d=t({__name:"about",setup(_){return(r,i)=>(s(),o("div",null,a))}});export{d as default};
